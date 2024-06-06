@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>โครงการเร่งรัดกำจัดโรคพิษสุนัขบ้าในพื้นที่กรุงเทพมหานคร ปีงบประมาณ พ.ศ. 2567 
+ภายใต้โครงการสัตว์ปลอดโรค คนปลอดภัย จากโรคพิษสุนัขบ้า ตามพระปณิธาน ศาสตราจารย์ ดร. สมเด็จเจ้าฟ้าฯ กรมพระศรีสวางควัฒน วรขัตติยราชนารี
+</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.0/css/responsive.dataTables.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css">
+  <!-- <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css"> -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/v/bs5/jszip-3.10.1/dt-2.0.3/b-3.0.1/b-colvis-3.0.1/b-html5-3.0.1/b-print-3.0.1/r-3.0.1/datatables.min.css" rel="stylesheet">
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/v/bs5/jszip-3.10.1/dt-2.0.3/b-3.0.1/b-colvis-3.0.1/b-html5-3.0.1/b-print-3.0.1/r-3.0.1/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css"></script>
+
+  <?!= HtmlService.createHtmlOutputFromFile('css').getContent() ?>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">โครงการปศุสัตว์ร่วมใจกำจัดภัยโรคพิษสุนัขบ้า</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" onclick="changePage('phome')">    
+                            <i class="fas fa-chart-bar"></i>
+                            หน้าหลัก
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" onclick="changePage('pform')">    
+                            <i class="fas fa-biking"></i>
+                            เพิ่มข้อมูล
+                        </a>
+                    </li>
+
+                    <!-- <li class="sidebar-item">
+                        <a class="sidebar-link" onclick="changePage('preport')">    
+                            <i class="fa-solid fa-list pe-2"></i>
+                            ผลการดำเนินงาน
+                        </a>
+                    </li> -->
+<!-- 
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" onclick="changePage('pcredit')">    
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Credit
+                        </a>
+                    </li> -->
+
+                    
+
+
+                    <!-- <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed " data-bs-target="#posts" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
+                            ผลการดำเนินงาน
+                        </a>
+                        <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 3</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 4</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 5</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 6</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 7</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 8</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">เขต 9</a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h6 class="card-title">
+โครงการเร่งรัดกำจัดโรคพิษสุนัขบ้าในพื้นที่กรุงเทพมหานคร ปีงบประมาณ พ.ศ. 2567 <br>
+ภายใต้โครงการสัตว์ปลอดโรค คนปลอดภัย จากโรคพิษสุนัขบ้า ตามพระปณิธาน ศาสตราจารย์ ดร. สมเด็จเจ้าฟ้าฯ กรมพระศรีสวางควัฒน วรขัตติยราชนารี
+
+                     <br>
+                </h6>     
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="https://img5.pic.in.th/file/secure-sv1/DLD-0.png" class="avatar img-fluid rounded" alt="" >
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#" class="dropdown-item" id="setmode">Setting
+                                   <!-- <a href="#" class="theme-toggle"> -->
+                                  <i class="fa-regular fa-moon"></i>
+                                  <i class="fa-regular fa-sun"></i>
+                                  <!-- </a> -->
+                                </a>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+
+                    <div class="card border-0">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                               🙋 ตารางสรุปการดำเนินงาน
+                            </h5>
+
+                            
+                        </div>
+                       
+                        <div class="card-body">
+
+                          <section id = "phome">
+                            <?!= HtmlService.createHtmlOutputFromFile('home').getContent() ?>
+                          </section>
+
+                          <section id ="pform" class= "pages">
+                            <?!= HtmlService.createHtmlOutputFromFile('form').getContent() ?>
+                          </section>
+
+                          <section id="ptable" class="pages">
+                            <?!= HtmlService.createHtmlOutputFromFile('table').getContent() ?>
+                          </section>
+
+                           <!-- <section id ="pcredit" class= "pages">
+                            <?!= HtmlService.createHtmlOutputFromFile('credit').getContent() ?>
+                          </section>
+
+                          <section id ="preport" class= "pages">
+                            <?!= HtmlService.createHtmlOutputFromFile('report').getContent() ?>
+                          </section> -->
+
+                    </div>
+                </div>
+            </main>
+
+
+            <!-- <a href="#" class="theme-toggle">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+            </a> -->
+
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-muted">
+                        <div class="col-6 text-start">
+                            <!-- <p class="mb-0">
+                              <a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter11.optistats.ovh/private/freecounterstat.php?c=w4phhcdlukll2fme7cwjhakury417l1n" border="0" title="website counter" alt="website counter">    เริ่มใช้งานวันที่ 21 มีนาคม 2567</a>
+                            </p> -->
+                        </div>
+                        <div class="col-6 text-end">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-muted">สำนักควบคุม ป้องกัน และบำบัดโรคสัตว์ 69/1 ถนนพญาไท ราชเทวี กรุงเทพฯ 10400 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.0/js/dataTables.responsive.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.0/js/responsive.dataTables.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+  <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
+
+ 
+  <?!= HtmlService.createHtmlOutputFromFile('js').getContent() ?>
+
+</body>
+
+</html>
