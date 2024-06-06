@@ -1,0 +1,345 @@
+<form id="myForm" onsubmit="submitForm(this)">
+
+  <div class="row">
+    <input type="text" class="form-control"  id="numid"  name="numid" hidden>   
+
+    <div class="col-md-3 mb-2">
+      <label>CodeRegis</label>
+      <input type="text" class="form-control"  id="inputB"  name="inputB"  >
+    </div>
+
+    <div class="col-md-3 mb-2">  
+      <label>เลขบัตรประชาชน</label>
+      <input type="text" class="form-control"  id="inputC"  name="inputC" maxlength="13" minlength="13" placeholder="ระบุเลขบัตรประชาชน 13 หลัก" >  <!--oninput="chkDigitPid()"-->
+      <!-- <span id="checkid" class="text-danger my-2"></span> -->
+    </div>
+
+
+    <div class="col-md-3 mb-2">
+      <label>ชื่อ</label>
+      <input type="text" class="form-control"  id="inputD"  name="inputD" >
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label>นามสกุล</label>
+      <input type="text" class="form-control"  id="inputE"  name="inputE"  >
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label>บ้านเลขที่</label>
+      <input type="text" class="form-control"  id="inputF"  name="inputF"  >
+    </div>
+        <div class="col-md-3 mb-2">
+      <label>หมู่ที่</label>
+      <input type="text" class="form-control"  id="inputG"  name="inputG"  >
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label>ตำบล</label>
+      <input type="text" class="form-control"  id="inputH"  name="inputH" >
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label>อำเภอ</label>
+      <input type="text" class="form-control"  id="inputI"  name="inputI" >
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label for="inputJ" class="form-label">จังหวัด</label>
+      <select id="inputJ" class="form-select" name="inputJ" >
+                    <option value=" ">เลือก</option>
+                    <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                    <option value="สมุทรปราการ">สมุทรปราการ</option>
+                    <option value="นนทบุรี">นนทบุรี</option>
+                    <option value="ปทุมธานี">ปทุมธานี</option>
+                    <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option>
+                    <option value="อ่างทอง">อ่างทอง</option>
+                    <option value="ลพบุรี">ลพบุรี</option>
+                    <option value="สิงห์บุรี">สิงห์บุรี</option>
+                    <option value="ชัยนาท">ชัยนาท</option>
+                    <option value="สระบุรี">สระบุรี</option>
+                    <option value="ชลบุรี">ชลบุรี</option>
+                    <option value="ระยอง">ระยอง</option>
+                    <option value="จันทบุรี">จันทบุรี</option>
+                    <option value="ตราด">ตราด</option>
+                    <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
+                    <option value="ปราจีนบุรี">ปราจีนบุรี</option>
+                    <option value="นครนายก">นครนายก</option>
+                    <option value="สระแก้ว">สระแก้ว</option>
+                    <option value="นครราชสีมา">นครราชสีมา</option>
+                    <option value="บุรีรัมย์">บุรีรัมย์</option>
+                    <option value="สุรินทร์">สุรินทร์</option>
+                    <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                    <option value="อุบลราชธานี">อุบลราชธานี</option>
+                    <option value="ยโสธร">ยโสธร</option>
+                    <option value="ชัยภูมิ">ชัยภูมิ</option>
+                    <option value="อำนาจเจริญ">อำนาจเจริญ</option>
+                    <option value="หนองบัวลำภู">หนองบัวลำภู</option>
+                    <option value="ขอนแก่น">ขอนแก่น</option>
+                    <option value="อุดรธานี">อุดรธานี</option>
+                    <option value="เลย">เลย</option>
+                    <option value="หนองคาย">หนองคาย</option>
+                    <option value="มหาสารคาม">มหาสารคาม</option>
+                    <option value="ร้อยเอ็ด">ร้อยเอ็ด</option>
+                    <option value="กาฬสินธุ์">กาฬสินธุ์</option>
+                    <option value="สกลนคร">สกลนคร</option>
+                    <option value="นครพนม">นครพนม</option>
+                    <option value="มุกดาหาร">มุกดาหาร</option>
+                    <option value="เชียงใหม่">เชียงใหม่</option>
+                    <option value="ลำพูน">ลำพูน</option>
+                    <option value="ลำปาง">ลำปาง</option>
+                    <option value="อุตรดิตถ์">อุตรดิตถ์</option>
+                    <option value="แพร่">แพร่</option>
+                    <option value="น่าน">น่าน</option>
+                    <option value="พะเยา">พะเยา</option>
+                    <option value="เชียงราย">เชียงราย</option>
+                    <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
+                    <option value="นครสวรรค์">นครสวรรค์</option>
+                    <option value="อุทัยธานี">อุทัยธานี</option>
+                    <option value="กำแพงเพชร">กำแพงเพชร</option>
+                    <option value="ตาก">ตาก</option>
+                    <option value="สุโขทัย">สุโขทัย</option>
+                    <option value="พิษณุโลก">พิษณุโลก</option>
+                    <option value="พิจิตร">พิจิตร</option>
+                    <option value="เพชรบูรณ์">เพชรบูรณ์</option>
+                    <option value="ราชบุรี">ราชบุรี</option>
+                    <option value="กาญจนบุรี">กาญจนบุรี</option>
+                    <option value="สุพรรณบุรี">สุพรรณบุรี</option>
+                    <option value="นครปฐม">นครปฐม</option>
+                    <option value="สมุทรสาคร">สมุทรสาคร</option>
+                    <option value="สมุทรสงคราม">สมุทรสงคราม</option>
+                    <option value="เพชรบุรี">เพชรบุรี</option>
+                    <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option>
+                    <option value="นครศรีธรรมราช">นครศรีธรรมราช</option>
+                    <option value="กระบี่">กระบี่</option>
+                    <option value="พังงา">พังงา</option>
+                    <option value="ภูเก็ต">ภูเก็ต</option>
+                    <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
+                    <option value="ระนอง">ระนอง</option>
+                    <option value="ชุมพร">ชุมพร</option>
+                    <option value="สงขลา">สงขลา</option>
+                    <option value="สตูล">สตูล</option>
+                    <option value="ตรัง">ตรัง</option>
+                    <option value="พัทลุง">พัทลุง</option>
+                    <option value="ปัตตานี">ปัตตานี</option>
+                    <option value="ยะลา">ยะลา</option>
+                    <option value="นราธิวาส">นราธิวาส</option>
+                    <option value="บึงกาฬ">บึงกาฬ</option>
+                  </select>
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <!--7  เขต-->
+      <label for="inputK" class="form-label">เขต</label>
+      <select id="inputK" class="form-select" name="inputK" required >
+                    <option value=" ">เลือกเขต </option>
+                    <option value="ปศุสัตว์เขต 1">ปศุสัตว์เขต 1</option>
+                    <option value="ปศุสัตว์เขต 2">ปศุสัตว์เขต 2</option>
+                    <option value="ปศุสัตว์เขต 3">ปศุสัตว์เขต 3</option>
+                    <option value="ปศุสัตว์เขต 4">ปศุสัตว์เขต 4</option>
+                    <option value="ปศุสัตว์เขต 5">ปศุสัตว์เขต 5</option>
+                    <option value="ปศุสัตว์เขต 6">ปศุสัตว์เขต 6</option>
+                    <option value="ปศุสัตว์เขต 7">ปศุสัตว์เขต 7</option>
+                    <option value="ปศุสัตว์เขต 8">ปศุสัตว์เขต 8</option>
+                    <option value="ปศุสัตว์เขต 9">ปศุสัตว์เขต 9</option>
+                </select>
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label>เบอร์โทรศัพท์</label>
+      <input type="text" class="form-control"  id="inputL"  name="inputL"  placeholder="ระบุ" >
+    </div>
+
+  
+
+    <div class="col-md-3 mb-2">
+      <label>NID (รหัส National ID System)</label>
+      <input type="text" class="form-control"  id="inputM"  name="inputM">
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label>พิกัดพื้นที่</label>
+      <input type="text" class="form-control"  id="inputN"  name="inputN">
+    </div>
+
+
+
+    <div class="col-md-3 mb-2">
+      <!--7  เขต-->
+      <label for="inputO" class="form-label">ชนิดสัตว์</label>
+      <select id="inputO" class="form-select" name="inputO" required >
+                    <option value=" ">เลือก </option>
+                    <option value="ม้า">ม้า</option>
+                    <option value="ลา">ลา</option>
+                    <option value="ล่อ">ล่อ</option>
+                    <option value="ม้าลาย">ม้าลาย</option>
+
+                </select>
+    </div>
+
+     <div class="col-md-3 mb-2">
+      <label for="inputP" class="form-label">ชนิดของการใช้งาน</label>
+      <select id="inputP" class="form-select" name="inputP" >
+                    <option value=" ">เลือก </option>
+                    <option value="ม้าแข่ง Racing Horse">ม้าแข่ง Racing Horse</option>
+                    <option value="ม้ากีฬา Equestrian Horse">ม้ากีฬา Equestrian Horse</option>
+                    <option value="ม้าใช้งานทั่วไป Working Horse">ม้าใช้งานทั่วไป Working Horse </option>
+                    <option value="ม้าหน่วยงานราชการ Military Horse">ม้าหน่วยงานราชการ Military Horse</option>
+                    <option value="อื่นๆ">อื่นๆ Other</option>
+                </select>
+    </div>
+
+
+    <div class="col-md-3 mb-2">
+     <label for="inputQ" class="form-label">ชื่อสัตว์</label>
+      <input type="text" class="form-control" id="inputQ" name="inputQ"  >
+    </div>
+
+    <div class="col-md-3 mb-2">
+      <label>เลขไมโครชิพ (Microships)</label>
+      <input type="text" class="form-control"  id="inputR"  name="inputR" maxlength="15" minlength="15" placeholder="ระบุเลขไมโครชิพ 15 หลัก">
+    </div>
+
+
+         <div class="col-md-3 mb-2">
+      <label for="inputS" class="form-label">สายพันธุ์ (ถ้ามีระบุ)</label>
+      <select id="inputS" class="form-select" name="inputS" >
+                    <option value=" ">เลือก </option>
+                    <option value="พันธุ์อาหรับ (Arabian)">พันธุ์อาหรับ (Arabian)</option>
+                    <option value="พันธุ์เทอร์รับเบร็ด (Thoroughbred)">พันธุ์เทอร์รับเบร็ด (Thoroughbred)</option>
+                    <option value="Pony Horse">Pony Horse</option>
+                    <option value="American Quarter Horse">American Quarter Horse</option>
+                    <option value="Morgan Horse">Morgan Horse</option>
+                    <option value="ม้าพันธุ์ไทย">ม้าพันธุ์ไทย</option>
+                    <option value="อื่นๆ">อื่นๆ Other</option>
+                </select>
+    </div>
+
+    <div class="col-md-3 mb-2">
+    <label for="inputT" class="form-label">ปีเกิด (ถ้ามีระบุ)</label>
+      <input type="text" class="form-control" id="inputT" name="inputT">
+    </div>
+
+
+   <div class="col-md-3 mb-2">
+      <label for="inputU" class="form-label">เพศ</label>
+      <select id="inputU" class="form-select" name="inputU" >
+                    <option value=" ">เลือก </option>
+                    <option value="ผู้ตอน">ผู้ตอน</option>
+                    <option value="เมีย">เมีย</option>
+                    <option value="พ่อพันธุ์">พ่อพันธุ์</option>
+                    <option value="แม่พันธุ์">แม่พันธุ์</option>
+      </select>
+    </div>
+
+     <div class="col-md-3 mb-2">
+      <label>สัตว์นำเข้า/เกิดในไทย</label>
+      <input type="text" class="form-control"  id="inputV"  name="inputV">
+    </div>
+
+      <div class="col-md-3 mb-2">
+        <label>ประเทศที่นำเข้า</label>
+        <input type="text" class="form-control"  id="inputW"  name="inputW">
+      </div>
+
+
+   <div class="col-md-3 mb-2">
+      <label for="inputX" class="form-label">วัคซีนรอบที่ 1</label>
+      <select id="inputX" class="form-select" name="inputX" >
+                    <option value=" ">เลือก </option>
+                    <option value="ทำ">ทำ</option>
+                    <option value="ไม่ทำ">ไม่ทำ</option>
+      </select>
+    </div>
+
+             <div class="col-md-3 mb-2">
+        <label>วันที่ทำวัคซีนรอบ 1</label>
+        <input type="date" class="form-control"  id="inputY"  name="inputY">
+      </div>
+
+         <div class="col-md-3 mb-2">
+      <label for="inputZ" class="form-label">Lot no.1</label>
+      <select id="inputZ" class="form-select" name="inputZ" >
+                    <option value=" ">เลือก </option>
+                    <option value="Lot 147">Lot 147</option>
+                    <option value="Lot 148">Lot 148</option>
+      </select>
+    </div>
+
+
+   <div class="col-md-3 mb-2">
+      <label for="inpuAA" class="form-label">วัคซีนรอบที่ 2</label>
+      <select id="inputAA" class="form-select" name="inputAA"  >
+                    <option value=" ">เลือก </option>
+                    <option value="ทำ">ทำ</option>
+                    <option value="ไม่ทำ">ไม่ทำ</option>
+      </select>
+    </div>
+             <div class="col-md-3 mb-2">
+        <label>วันที่ทำวัคซีนรอบ 2</label>
+        <input type="date" class="form-control"  id="inputAB"  name="inputAB">
+      </div>
+
+     <div class="col-md-3 mb-2">
+      <label for="inputAC" class="form-label">Lot no.2</label>
+      <select id="inputAC" class="form-select" name="inputAC"  >
+                    <option value=" ">เลือก </option>
+                    <option value="Lot 149A">Lot 149A</option>
+                    </select>
+    </div>
+
+  <div class="col-6">
+    <label for="inputmyfile" class="form-label">อัพโหลดไฟล์</label>
+      <input type="file" class="form-control" id="myfile" name="myfile" accept="image/*" onchange="previewImage(event)">
+       </div>
+
+   <div>
+         <img id = "myPreview" width="100px" class="mx-auto">
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 mb-2">
+        <label>วันที่บันทึก</label>
+        <input type="date" class="form-control"  id="inputAE"  name="inputAE">
+      </div>
+   
+      <div class="col-md-3 mb-2">
+        <label>Passport ID</label>
+        <input type="text" class="form-control"  id="inputAF"  name="inputAF">
+      </div>
+
+ </div>
+  </div>
+
+
+  <button type="submit" class="btn btn-secondary">บันทึก</button>
+
+</form>
+
+
+<script>
+  function submitForm(obj){
+   event.preventDefault()
+   $.LoadingOverlay("show");
+
+   let numid = $('#numid').val()
+
+   if(numid == ""){
+      google.script.run.withSuccessHandler(data=>{
+      console.log(data)
+      $('#myForm')[0].reset()
+      changePage('phome')
+      google.script.run.withSuccessHandler(showData).getData()
+      $.LoadingOverlay("hide");
+   }).saveData(obj)
+   }else{
+      google.script.run.withSuccessHandler((data)=>{
+      $('#myForm')[0].reset()
+      changePage('phome')
+      table.row($(t).parents('tr')).data(data[0])
+      $.LoadingOverlay("hide");
+   }).updateData(obj)
+   }
+ }
+
+</script>
